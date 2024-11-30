@@ -406,18 +406,38 @@ body {
 .feature-card {
     background: #1A1A1A;
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     position: relative;
     /* clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); */
-    height: 500px;
+    height: 400px;
+}
+.eclip{
+    background: #1A1A1A;
     padding-bottom: 70px;
     margin-bottom: 30px;
-}
 
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 50% 100%, 0 45%);
+
+}
+.bao-uy-tin{
+    background: #1A1A1A;
+
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
+}
 .feature-card.red-card {
     background: #C1272D;
 }
+.do1, .eclip1{
+    background: #C1272D !important;
 
+}
+.eclip1{
+    background: #C1272D !important;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 50% 100%, 0 45%);
+    padding-bottom: 70px;
+    margin-bottom: 30px;
+
+}
 .feature-icon {
     width: 60px;
     height: 60px;
@@ -732,7 +752,11 @@ position: relative;
     margin: 0 auto;
 
 }
-
+.active {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
 .feature-title::before {
     content: "";
     width: 0;

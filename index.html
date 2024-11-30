@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta property="og:title" content="Fin - Giải pháp chuyển đổi số ngành tài chính">
+    <meta property="og:title" content="CỨU HỘ XE 24H">
     <meta property="og:description"
-        content="Công ty TNHH FIN là đơn vị tiên phong trong việc cung cấp các giải pháp chuyển đổi số toàn diện cho lĩnh vực tài chính và ngân sách nhà nước tại Việt Nam.">
-    <meta property="og:image" content="assets/images/logo.png">
+        content="Dịch vụ cứu hộ xe 24h đóng vai trò thiết yếu trong việc hỗ trợ người lái xe trong những tình huống khẩn cấp. Từ việc vá lốp, hết xăng, hỏng máy cho đến tai nạn giao thông, cứu hộ xe mang đến sự an tâm và giúp tiết kiệm thời gian cho người lái. Việc hiểu rõ về dịch vụ cứu hộ xe 24h sẽ giúp bạn sử dụng dịch vụ này một cách hiệu quả.">
+    <meta property="og:image" content="imgs/img-02.png">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Fin">
+    <meta property="og:site_name" content="Cứu hộ 24h">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
@@ -47,7 +47,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="closeMenu()">Trang Chủ</a>
+                            <a class="nav-link menu-active" href="#" onclick="closeMenu()">Trang Chủ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#gioi_thieu" onclick="closeMenu()">Giới Thiệu</a>
@@ -175,27 +175,30 @@
             <h2 class="why-choose-title" id="dv">TẠI SAO KHÁCH HÀNG NÊN LỰA CHỌN DỊCH VỤ CỨU HỘ XE 24H?</h2>
             <div class="row why">
                 <div class="col-md-4">
-                    <div class="feature-card">
-                        <img src="imgs/icon1-02.png" class="icon-why">
-
-                        <div>
-                            <div class="feature-title">Độ tin cậy và uy tín</div>
-
+                    <!-- <div class="bao-uy-tin"> -->
+                        <div class="feature-card">
+                            <img src="imgs/icon1-02.png" class="icon-why">
+    
+                            <div>
+                                <div class="feature-title">Độ tin cậy và uy tín</div>
+    
+                            </div>
+                            <p class="feature-text">
+                                Đầu tiên, chúng tôi tự tin là đơn vị
+                                cung cấp dịch vụ<span class="do"> cứu hộ xe hơi
+                                    đầu ngành tại Hà Nội.</span>
+                            </p>
+                            <p class="feature-text">
+                                Được Sở kế hoạch & đầu tư Hà Nội
+                                cấp phép năm 2007 (hơn 17 năm
+                                làm việc) với ngành nghề cứu hộ
+                                giao thông, cẩu kéo xe từ 4 chỗ
+                                đến 50 tấn các khu vực xung
+                                quanh địa bàn Hà Nội
+                            </p>
                         </div>
-                        <p class="feature-text">
-                            Đầu tiên, chúng tôi tự tin là đơn vị
-                            cung cấp dịch vụ<span class="do"> cứu hộ xe hơi
-                                đầu ngành tại Hà Nội.</span>
-                        </p>
-                        <p class="feature-text">
-                            Được Sở kế hoạch & đầu tư Hà Nội
-                            cấp phép năm 2007 (hơn 17 năm
-                            làm việc) với ngành nghề cứu hộ
-                            giao thông, cẩu kéo xe từ 4 chỗ
-                            đến 50 tấn các khu vực xung
-                            quanh địa bàn Hà Nội
-                        </p>
-                    </div>
+                        <div class="eclip"></div>
+                    <!-- </div> -->
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card red-card">
@@ -214,6 +217,8 @@
                             cho khách hàng.
                         </p>
                     </div>
+                    <div class="eclip1"></div>
+
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card">
@@ -226,7 +231,10 @@
                                 được thông tin của khách hàng
                         </p>
                     </div>
+                    <div class="eclip"></div>
+
                 </div>
+                
             </div>
         </div>
     </section>
@@ -461,26 +469,26 @@
 
 </html>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    // Lấy tất cả menu items
-    const menuItems = document.querySelectorAll('.nav-link');
+//     document.addEventListener('DOMContentLoaded', function() {
+//     // Lấy tất cả menu items
+//     const menuItems = document.querySelectorAll('.nav-link');
     
-    // Thêm active class mặc định cho Trang Chủ
-    menuItems[0].classList.add('menu-active');
+//     // Thêm active class mặc định cho Trang Chủ
+//     menuItems[0].classList.add('menu-active');
     
-    // Thêm click event cho từng menu item
-    menuItems.forEach(item => {
-        item.addEventListener('click', function() {
-            // Xóa class active cũ
-            menuItems.forEach(link => {
-                link.classList.remove('menu-active');
-            });
+//     // Thêm click event cho từng menu item
+//     menuItems.forEach(item => {
+//         item.addEventListener('click', function() {
+//             // Xóa class active cũ
+//             menuItems.forEach(link => {
+//                 link.classList.remove('menu-active');
+//             });
             
-            // Thêm class active mới
-            this.classList.add('menu-active');
-        });
-    });
-});
+//             // Thêm class active mới
+//             this.classList.add('menu-active');
+//         });
+//     });
+// });
     function closeMenu() {
         if (window.innerWidth < 992) { // 992px là breakpoint của bootstrap lg
             const navbarCollapse = document.getElementById('navbarNav');
