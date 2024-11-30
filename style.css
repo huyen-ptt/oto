@@ -416,7 +416,7 @@ body {
     padding-bottom: 70px;
     margin-bottom: 30px;
 
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 50% 100%, 0 45%);
+    clip-path: polygon(0 0, 100% 0, 100% 3%, 50% 100%, 0 3%);
 
 }
 .bao-uy-tin{
@@ -433,7 +433,7 @@ body {
 }
 .eclip1{
     background: #C1272D !important;
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 50% 100%, 0 45%);
+    clip-path: polygon(0 0, 100% 0, 100% 3%, 50% 100%, 0 3%);
     padding-bottom: 70px;
     margin-bottom: 30px;
 
@@ -1080,7 +1080,7 @@ a:hover {
 
     .feature-card {
         height: 450px;
-        margin: 15px;
+        /* margin: 15px; */
     }
 
     .why-choose-title,
