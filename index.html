@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta property="og:title" content="Fin - Giải pháp chuyển đổi số ngành tài chính">
+    <meta property="og:description"
+        content="Công ty TNHH FIN là đơn vị tiên phong trong việc cung cấp các giải pháp chuyển đổi số toàn diện cho lĩnh vực tài chính và ngân sách nhà nước tại Việt Nam.">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Fin">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container px-4">
+            <nav class="navbar navbar-expand-md navbar-dark p-0">
+                <a href="#" class="text-decoration-none">
+                    <div class="d-flex align-items-center">
+                        <img src="imgs/img-02.png" alt="Logo" class="logo">
+                    </div>
+                </a>
+
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="closeMenu()">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gioi_thieu" onclick="closeMenu()">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#dv" onclick="closeMenu()">Dịch Vụ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#meo" onclick="closeMenu()">Mẹo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lh" onclick="closeMenu()">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="phone">
+                    <span class="call-now">Gọi ngay</span>
+                    <a href="tel:0916841194" class="emergency-phone d-none d-md-flex">
+                        0916 841 194
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <img width="100%" height="28px" src="imgs/18.png" alt="">
+
+    <!-- Header Section -->
+    <section class="header-section">
+        <div class="container">
+            <h1 class="main-title">CỨU HỘ XE <span>24H</span></h1>
+            <p class="subtitle">NHANH CHÓNG - UY TÍN - CHUYÊN NGHIỆP!</p>
+            <p class="support-text">CÓ MẶT TRONG 30 PHÚT, ĐẢM BẢO AN TOÀN & HIỆU QUẢ</p>
+            <p class="red"> GỌI CỨU HỘ NGAY 091 684 1194</p>
+
+            <div class="alert-custom">
+                Trong cuộc sống hàng ngày, việc gặp phải sự cố liên quan đến xe cộ là điều không thể tránh khỏi. Khi xe
+                không hoạt động
+                hoặc gặp vấn đề trên đường, dịch vụ cứu hộ xe 24h trở thành một giải pháp hữu ích giúp bạn giải quyết
+                tình huống một cách
+                nhanh chóng và hiệu quả.
+            </div>
+            <div class="hero-section">
+                <img src="imgs/img-04.png" alt="Truck and Car" class="hero-image">
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Intro Section -->
+    <div class="bao">
+        <section class="intro-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title" id="gioi_thieu">GIỚI THIỆU VỀ CỨU HỘ XE 24H</h2>
+                    <p class="intro-text">
+                        Dịch vụ cứu hộ xe 24h đóng vai trò thiết yếu trong việc hỗ trợ người lái xe trong những tình
+                        huống
+                        khẩn cấp. Từ việc vá lốp, hết
+                        xăng, hỏng máy cho đến tai nạn giao thông, cứu hộ xe mang đến sự an tâm và giúp tiết kiệm thời
+                        gian
+                        cho người lái. Việc hiểu
+                        rõ về dịch vụ cứu hộ xe 24h sẽ giúp bạn sử dụng dịch vụ này một cách hiệu quả.
+                    </p>
+                    <img src="imgs/04.png" alt="Rescue Fleet" class="fleet-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="section-title"> TẠI SAO BẠN CẦN CỨU HỘ XE 24H?</h2>
+                    <p class="intro-text">
+                        Cứu hộ xe không chỉ đơn thuần là việc kéo xe đến một địa điểm khác, mà còn bao gồm nhiều dịch vụ
+                        khác như vá săm, sửa
+                        chữa tại chỗ, cung cấp nhiên liệu, và đảm bảo an toàn cho người lái. Trong nhiều trường hợp, khi
+                        xe
+                        gặp sự cố ở những địa
+                        điểm xa xôi không có garage hoặc dịch vụ sửa chữa, cứu hộ xe trở thành cứu cánh kịp thời cho
+                        người
+                        lái.
+                    </p>
+                </div>
+
+
+                <div class="services-container">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-6 col-6 service-item">
+                            <img src="imgs/05.png" alt="Service 1" class="service-icon">
+                            <h5 class="service-title"> Xe hết nhiên liệu giữa đường</h5>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-6 service-item">
+                            <img src="imgs/06.png" alt="Service 2" class="service-icon">
+                            <h5 class="service-title">Xe bị tai nạn giao thông</h5>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-6 col-6 service-item">
+                            <img src="imgs/07.png" alt="Service 3" class="service-icon">
+                            <h5 class="service-title"> Hỏng hóc hoặc
+                                lỗi máy móc bất ngờ</h5>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-6 service-item">
+                            <img src="imgs/08.png" alt="Service 4" class="service-icon">
+                            <h5 class="service-title">Vấn đề với lốp xe như
+                                nổ hoặc xì hơi</h5>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-6 service-item">
+                            <img src="imgs/09.png" alt="Service 5" class="service-icon">
+                            <h5 class="service-title">Xe bị kẹt trong bùn hoặc tuyết</h5>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-6 service-item">
+                            <img src="imgs/10.png" alt="Service 6" class="service-icon">
+                            <h5 class="service-title">Ắc quy hết điện</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="why-choose-title" id="dv">TẠI SAO KHÁCH HÀNG NÊN LỰA CHỌN DỊCH VỤ CỨU HỘ XE 24H?</h2>
+            <div class="row why">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <img src="imgs/icon1-02.png" class="icon-why">
+
+                        <div>
+                            <div class="feature-title">Độ tin cậy và uy tín</div>
+
+                        </div>
+                        <p class="feature-text">
+                            Đầu tiên, chúng tôi tự tin là đơn vị
+                            cung cấp dịch vụ<span class="do"> cứu hộ xe hơi
+                                đầu ngành tại Hà Nội.</span>
+                        </p>
+                        <p class="feature-text">
+                            Được Sở kế hoạch & đầu tư Hà Nội
+                            cấp phép năm 2007 (hơn 17 năm
+                            làm việc) với ngành nghề cứu hộ
+                            giao thông, cẩu kéo xe từ 4 chỗ
+                            đến 50 tấn các khu vực xung
+                            quanh địa bàn Hà Nội
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card red-card">
+                        <img src="imgs/icon2-02.png" class="icon-why">
+
+                        <h3 class="feature-title">Phạm vi dịch vụ</h3>
+                        <p class="feature-text">
+                            Chúng tôi lựa chọn tập trung dịch
+                            vụ tại các khu vực lân cận trên địa
+                            bàn Hà Nội đảm bảo tới hiện
+                            trường nhanh chóng.
+                        </p>
+                        <p class="feature-text">
+                            Đối với những xe hư hỏng nhẹ,
+                            chúng tôi hỗ trợ sửa chữa tại chỗ
+                            cho khách hàng.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <img src="imgs/icon3-02.png" class="icon-why">
+
+                        <h3 class="feature-title">Thời gian phản hồi</h3>
+                        <p class="feature-text">
+                            Chúng tôi cam kết thời gian<span class="do"> phản 
+                                hồi nhanh chóng chỉ từ 30’- 60’ </span>trên địa bàn Hà Nội kể từ khi nhận 
+                                được thông tin của khách hàng
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="banner">
+                <span>ĐỘ TIN CẬY VÀ UY TÍN</span>
+            </div>
+            <h2 class="pricing-title">GIÁ DỊCH VỤ CỨU HỘ XE 24H</h2>
+            <div class="table-responsive">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>DỊCH VỤ</th>
+                            <th>KHOẢNG GIÁ (VNĐ)</th>
+                            <th>LƯU Ý (giá tùy thuộc vào)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>VÁ LỐP XE</td>
+                            <td>150.000 - 300.000</td>
+                            <td>Phụ kiện, độ khó, tình trạng lốp</td>
+                        </tr>
+                        <tr>
+                            <td>KÍCH BÌNH ẮC QUY</td>
+                            <td>300.000 - 700.000</td>
+                            <td>Loại xe, kiểm tra hệ thống điện</td>
+                        </tr>
+                        <tr>
+                            <td>CUNG CẤP NHIÊN LIỆU</td>
+                            <td>200.000 - 500.000</td>
+                            <td>Khoảng cách di chuyển, giá xăng dầu</td>
+                        </tr>
+                        <tr>
+                            <td>CẨU XE CỨU HỘ</td>
+                            <td>500.000 - 2.000.000</td>
+                            <td> Khoảng cách cẩu, loại xe</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section">
+        <div class="container">
+            <h2 class="pricing-title mar">QUY TRÌNH HỖ TRỢ CỦA CHÚNG TÔI</h2>
+            <p class="des"> Gọi cứu hộ xe cũng có quy trình cụ thể mà bạn nên nắm rõ để đảm bảo rằng bạn nhận được sự hỗ
+                trợ kịp thời nhất.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="process-step">
+                        <div class="process-circle d-flex">
+                            <div class="number">1.</div>
+                            <div class="title">CHUẨN BỊ THÔNG TIN CẦN THIẾT</div>
+                            <p>Trước khi gọi cứu hộ xe 24h, bạn cần chuẩn bị những thông tin cơ bản như vị trí hiện tại
+                                của bạn, loại xe, và tình trạng xe đang gặp sự cố.</p>
+                            <p>Thông tin này sẽ giúp đội cứu hộ nhanh chóng xác định vị trí và loại hình dịch vụ cần
+                                thiết.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-step">
+                        <div class="process-circle nguoc d-flex">
+                            <div class="number">2.</div>
+                            <div class="title">QUY TRÌNH GỌI CỨU HỘ</div>
+                            <p>Đầu tiên, bạn hãy gọi vào số <strong style="color: black;">hotline 091.684.1194</strong>
+                                của dịch vụ cứu hộ xe mà bạn đã lựa chọn.</p>
+                            <p>Khi nói chuyện với nhân viên, hãy cung cấp các thông tin cần thiết một cách rõ ràng. Hãy
+                                hỏi về thời gian phản hồi và chi phí dịch vụ để có cái nhìn tổng quan hơn.</p>
+                            <p>Sau khi thông nhất được rồi, bạn chỉ cần chờ đợi sự hỗ trợ đến từ dịch vụ cứu hộ xe 24h.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 bar">
+                    <div class="process-step d-flex">
+                        <div class="process-circle">
+                            <div class="number">3.</div>
+                            <div class="title">GIỮ AN TOÀN CHO BẢN THÂN</div>
+                            <p>Khi đang đợi cứu hộ, hãy đứng ở một nơi an toàn và xa khỏi dòng xe cộ. Bạn có thể dùng
+                                đèn pin hoặc đặt các tín hiệu cảnh báo để nhắc nhở những xe khác. Hãy nhớ rằng an toàn
+                                của bạn luôn là ưu tiên hàng đầu.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="container text-center">
+            <h2 class="pricing-title feedback">KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <img src="imgs/avt-1.png" alt="Hà Nam" class="testimonial-avatar">
+                        <div class="testimonial-name">Hà Nam</div>
+                        <div class="text-muted">Thanh Xuân</div>
+                        <p class="testimonial-text">
+                            "Hôm nay lướt web thấy website các bạn
+                            tôi mới có thời gian gửi lời cảm ơn chân
+                            thành tới các bạn chúc công ty luôn được
+                            mọi người tin tưởng như mình..."
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <img src="imgs/avt-2.png" alt="Hà Nam" class="testimonial-avatar">
+                        <div class="testimonial-name">Mr Bình</div>
+                        <div class="text-muted">Cầu giấy</div>
+                        <p class="testimonial-text">
+                            "Tôi rất hài lòng về phong cách phục vụ và
+                            hỗ trợ từ các bạn. Cảm ơn các bạn đã
+                            giúp đỡ tôi cùng gia đình được an toàn về
+                            với mái ấm của mình
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <img src="imgs/anh-3.png" alt="Hà Nam" class="testimonial-avatar">
+                        <div class="testimonial-name">Ms Hạnh</div>
+                        <div class="text-muted"> Hà Nội</div>
+                        <p class="testimonial-text">
+                            "Mọi việc xảy ra quá nhanh tôi chỉ biết là
+                            vào google tìm kiếm và gọi cho các bạn.
+                            Các bạn có mặt rất nhanh chóng xử lý
+                            giúp tôi được an toàn về với gđ ...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section hinh-anh">
+        <div class="container text-center">
+            <h2 class="pricing-title1 feedback">HÌNH ẢNH THỰC TẾ</h2>
+            <div class="gallery-carousel">
+                <div class="slider d-flex">
+                    <div><img src="imgs/19.png" alt="Cứu hộ xe 1" class="gallery-image"></div>
+                    <div><img src="imgs/20.png" alt="Cứu hộ xe 2" class="gallery-image"></div>
+                    <div><img src="imgs/21.png" alt="Cứu hộ xe 3" class="gallery-image"></div>
+                    <div><img src="imgs/22.png" alt="Cứu hộ xe 1" class="gallery-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section hinh-anh">
+        <div class="container text-center">
+            <h2 class="pricing-title1 feedback">VIDEO THỰC TẾ</h2>
+            <div class="gallery-carousel">
+                <div class="slider d-flex">
+                    <div><img src="imgs/19.png" alt="Cứu hộ xe 1" class="gallery-image"></div>
+                    <div><img src="imgs/20.png" alt="Cứu hộ xe 2" class="gallery-image"></div>
+                    <div><img src="imgs/21.png" alt="Cứu hộ xe 3" class="gallery-image"></div>
+                    <div><img src="imgs/22.png" alt="Cứu hộ xe 1" class="gallery-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img width="100%" height="28px" src="imgs/18.png" alt="">
+
+    <section class="header-section">
+        <div class="container">
+            <h1 class="why-choose-title mar" id="meo"> CÁC MẸO ĐỂ TRÁNH GẶP PHẢI TÌNH HUỐNG CẦN CỨU HỘ XE</span></h1>
+            <p class="des1">Để giảm thiểu tình huống phải cần đến cứu hộ xe, bạn có thể áp dụng một số mẹo dưới đây
+                để bảo dưỡng và sử dụng xe đúng cách</p>
+            <div class="row justify-content-center mt-3 meo">
+                <div class="col-md-5">
+                    <div class="maintenance-box">
+                        <h2 class="title"><span>1.</span> BẢO TRÌ XE ĐỊNH KỲ</h2>
+                        <p class="description">
+                            Bảo trì xe là yếu tố quan trọng giúp phát hiện sớm các vấn đề
+                            tiềm ẩn. Bạn nên tiến hành bảo dưỡng định kỳ, bao gồm kiểm
+                            tra dầu động cơ, lốp xe, và hệ thống phanh. Việc này không
+                            chỉ giúp xe hoạt động tốt mà còn kéo dài tuổi thọ của xe.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="maintenance-box">
+                        <h2 class="title"><span>2.</span> KIỂM TRA HỆ THỐNG LÁI VÀ PHANH</h2>
+                        <p class="description">
+                            Hệ thống lái và phanh là những bộ phận quan trọng nhất mà
+                            bạn cần kiểm tra thường xuyên. Nếu phát hiện có bất thường,
+                            hãy sửa chữa ngay lập tức để tránh những trường hợp khẩn
+                            cấp không mong muốn diễn ra. Một chiếc xe an toàn sẽ giúp
+                            bạn yên tâm hơn khi tham gia giao thông.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-section">
+                <img src="imgs/oto-6.png" alt="Truck and Car" class="hero-image">
+
+            </div>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-info" id="lh">
+                <h2 class="why-choose-title bo"> LIÊN HỆ NGAY ĐỂ NHẬN HỖ TRỢ KỊP THỜI!</h2>
+                <p class="description">
+                    <span class="red-text">CỨU HỘ XE 24H</span> là một dịch vụ cần thiết trong cuộc sống hiện đại, giúp
+                    giải quyết nhanh chóng những
+                    sự cố xảy ra trên
+                    đường. Chọn dịch vụ cứu hộ xe uy tín, hiểu rõ quy trình và chuẩn bị thông tin cần thiết sẽ giúp bạn
+                    có trải nghiệm tốt nhất. Hơn
+                    nữa, duy trì việc bảo trì và kiểm tra xe định kỳ sẽ giúp bạn giảm thiểu nguy cơ gặp phải sự cố. Hãy
+                    luôn sẵn sàng và thông
+                    minh khi lái xe để đảm bảo cho chính bạn cùng mọi người xung quanh.
+                </p>
+                <div class="contact-address">
+                    <div>Địa chỉ: 1187 Giải Phòng, Hoàng Mai , Hà Nội</div>
+                    <div>Số 9 Lê Quang Đạo, Mỹ Đình, Hà Nội</div>
+                    <div>Số 30 đường Phi Trường, Long Biên, Hà Nộ</div>
+                </div>
+                <a href="tel:0916841194" class="pricing-title1 feedback"> HOTLINE: 091 684 1194</a>
+            </div>
+        </div>
+    </section>
+    <img width="100%" height="28px" src="imgs/18.png" alt="">
+
+</html>
+<script>
+    function closeMenu() {
+        if (window.innerWidth < 992) { // 992px là breakpoint của bootstrap lg
+            const navbarCollapse = document.getElementById('navbarNav');
+            if (navbarCollapse.classList.contains('show')) {
+                navbarCollapse.classList.remove('show');
+            }
+            // Nếu bạn có nút toggle, cũng cần remove class collapsed
+            const toggleButton = document.querySelector('.navbar-toggler');
+            if (toggleButton && !toggleButton.classList.contains('collapsed')) {
+                toggleButton.classList.add('collapsed');
+            }
+        }
+    }
+    $(document).ready(function () {
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
