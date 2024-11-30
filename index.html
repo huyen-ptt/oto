@@ -169,6 +169,7 @@
             </div>
         </section>
     </div>
+    
     <section class="why-choose-section">
         <div class="container">
             <h2 class="why-choose-title" id="dv">TẠI SAO KHÁCH HÀNG NÊN LỰA CHỌN DỊCH VỤ CỨU HỘ XE 24H?</h2>
@@ -232,9 +233,9 @@
 
     <section class="pricing-section">
         <div class="container">
-            <div class="banner">
+            <!-- <div class="banner">
                 <span>ĐỘ TIN CẬY VÀ UY TÍN</span>
-            </div>
+            </div> -->
             <h2 class="pricing-title">GIÁ DỊCH VỤ CỨU HỘ XE 24H</h2>
             <div class="table-responsive">
                 <table class="pricing-table">
@@ -460,6 +461,26 @@
 
 </html>
 <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Lấy tất cả menu items
+    const menuItems = document.querySelectorAll('.nav-link');
+    
+    // Thêm active class mặc định cho Trang Chủ
+    menuItems[0].classList.add('menu-active');
+    
+    // Thêm click event cho từng menu item
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // Xóa class active cũ
+            menuItems.forEach(link => {
+                link.classList.remove('menu-active');
+            });
+            
+            // Thêm class active mới
+            this.classList.add('menu-active');
+        });
+    });
+});
     function closeMenu() {
         if (window.innerWidth < 992) { // 992px là breakpoint của bootstrap lg
             const navbarCollapse = document.getElementById('navbarNav');

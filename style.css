@@ -26,18 +26,25 @@ body {
     margin: 0 auto;
 }
 
+
+
 /* Container for the banner */
 .banner {
     position: relative;
     display: inline-block;
-    background-color: #c91e1e;
+    background-color: #C1272D;
     /* Red color */
     color: white;
     font-weight: bold;
     padding: 10px 20px;
     text-align: center;
 }
-
+.menu-active{
+    background-color: #C1272D;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold !important;
+}
 /* Left shadow */
 .banner::before {
     content: "";
@@ -292,7 +299,7 @@ body {
 .services-section {
     position: relative;
     background: #1A1A1A;
-    padding: 50px 0 130px;
+    padding: 0px 0 130px;
     /* Tăng padding bottom để chừa chỗ cho mũi tên */
     clip-path: polygon(0 0,
             100% 0,
@@ -401,7 +408,7 @@ body {
     color: white;
     padding: 20px;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); */
     height: 500px;
     padding-bottom: 70px;
     margin-bottom: 30px;
@@ -425,9 +432,9 @@ body {
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
-
+position: relative;
     text-transform: uppercase;
-    margin: 15px -20px;
+    margin: 15px -27px;
 }
 
 .feature-card.red-card .feature-title {
@@ -726,7 +733,7 @@ body {
 
 }
 
-.feature-title ::before {
+.feature-title::before {
     content: "";
     width: 0;
     height: 0;
@@ -734,7 +741,7 @@ body {
     border-right: 0px solid transparent;
     border-top: 6px solid #0b1b47;
     position: absolute;
-    top: calc(100% - 1px);
+    top: calc(100% - 0px);
     left: 0;
 }
 
@@ -742,11 +749,11 @@ body {
     content: "";
     width: 0;
     height: 0;
-    border-left: 8px solid transparent;
-    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 8px solid transparent;
     border-top: 6px solid #0b1b47;
     position: absolute;
-    top: calc(100% - 1px);
+    top: calc(100% - 0px);
     right: 0;
 }
 
