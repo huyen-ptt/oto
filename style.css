@@ -41,7 +41,7 @@ body {
 }
 .menu-active{
     background-color: #C1272D;
-    padding: 10px;
+    padding: 8px;
     border-radius: 8px;
     font-weight: bold !important;
 }
@@ -92,8 +92,8 @@ body {
 
 .nav-link {
     color: white !important;
-    padding: 0 20px !important;
-    font-size: 15px;
+    margin: 0 20px ;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -112,9 +112,10 @@ body {
     background-image: url(imgs/img-03.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 180px;
-    height: 57px;
+    width: 201px;
+    height: 74px;
     position: relative;
+    animation: pulse1 1.5s infinite;
 
 }
 
@@ -126,12 +127,7 @@ body {
 /* Mobile styles */
 
 
-.nav-link {
-    color: white !important;
-    padding: 0 20px;
-    font-size: 15px;
-    font-weight: 500;
-}
+
 
 .header-section {
     background-image: url(imgs/26.png);
@@ -161,22 +157,22 @@ body {
 }
 
 .support-text {
-    font-size: 15px;
+    font-size: 20px;
     align-items: center;
     margin: auto;
     color: white;
     margin-bottom: 8px;
     font-weight: 600;
     background-color: #1A1A1A;
-    max-width: 440px;
-
+    max-width: 630px;
+    padding: 10px;
 }
 
 .alert-custom {
     /* background-color: rgba(227, 24, 55, 0.1);
     border: 1px solid #C1272D; */
     color: #333;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.6;
     padding: 15px 20px;
     max-width: 800px;
@@ -286,15 +282,76 @@ body {
 
 .red {
     background-color: #C1272D;
-    font-size: 14px;
+    font-size: 22px;
     align-items: center;
     margin: auto;
     color: white;
     margin-bottom: 8px;
     font-weight: 600;
+    max-width: 450px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+  }
 
-    max-width: 250px;
-}
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+      box-shadow: 0 0 10px rgba(193, 39, 45, 0.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes pulse1 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+      /* box-shadow: 0 0 10px rgba(193, 39, 45, 0.7); */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .red::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
+    transform: rotate(45deg);
+    animation: shine 2s infinite;
+  }
+
+  @keyframes shine {
+    0% {
+      left: -50%;
+    }
+    100% {
+      left: 150%;
+    }
+  }
+
+  .emergency-text {
+    position: relative;
+    z-index: 1;
+  }
 
 .services-section {
     position: relative;
@@ -356,20 +413,20 @@ body {
 
 .emergency-phone {
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     text-decoration: none;
     position: absolute;
-    right: 17px;
-    top: 29px;
+    right: 31px;
+    top: 33px;
 }
 
 .call-now {
     position: absolute;
-    right: 37px;
-    top: 12px;
+    right: 50px;
+    top: 15px;
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -438,6 +495,30 @@ body {
     margin-bottom: 30px;
 
 }
+.phone-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    /* color: #25D366; */
+    animation: shake 1s infinite;
+    z-index: 1000;
+    cursor: pointer;
+    background: #C1272D;
+    padding: 20px;
+    color: white;
+    border-radius: 999px;
+  }
+
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-10deg); }
+    20% { transform: rotate(10deg); }
+    30% { transform: rotate(-10deg); }
+    40% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
 .feature-icon {
     width: 60px;
     height: 60px;
@@ -502,11 +583,11 @@ position: relative;
     background: #C1272D;
     color: white;
     text-align: center;
-    padding: 3px;
+    padding: 5px 10px;
     font-size: 24px;
     margin: auto;
     margin-bottom: 20px;
-    max-width: 450px;
+    max-width: 500px;
     font-weight: bold;
     transition: all 0.3s ease;
 }
@@ -525,7 +606,9 @@ position: relative;
 .pricing-title:hover:after {
     width: 100%;
 }
-
+a:hover{
+    color: white;
+}
 .pricing-title1 {
     background: #C1272D;
     color: white;
@@ -536,8 +619,12 @@ position: relative;
     margin-bottom: 20px;
     max-width: 300px;
     font-weight: bold;
+    /* animation: pulse 1.5s infinite; */
 }
+.ani{
+    animation: pulse1 1.5s infinite;
 
+}
 .mar {
     margin-bottom: 8px !important;
 }
@@ -586,7 +673,7 @@ position: relative;
 
 /* Process Section Styles */
 .process-section {
-    padding: 40px 0;
+    padding: 40px 0 20px;
     background: white;
 }
 
@@ -668,7 +755,7 @@ position: relative;
 
 .testimonials-section {
     background: #1a1a1a;
-    clip-path: polygon(0 100%, 100% 100%, 100% 35%, 50% 0, 0 35%);
+    clip-path: polygon(0 100%, 100% 100%, 100% 41%, 50% 0, 0 41%);
     padding: 100px 0 0;
     color: white;
 }
@@ -701,7 +788,7 @@ position: relative;
 
 .testimonial-name {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
     /* margin-bottom: 5px; */
 }
 
@@ -710,13 +797,13 @@ position: relative;
 }
 
 .text-muted {
-    font-size: 15px;
+    font-size: 17px;
     color: white !important;
     padding-bottom: 10px;
 }
 
 .testimonial-text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     max-width: 300px;
     margin: 0 auto;
@@ -728,7 +815,7 @@ position: relative;
 
 .hinh-anh {
     padding-bottom: 40px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 /* Gallery Section */
@@ -811,7 +898,38 @@ position: relative;
     font-size: 30px !important;
 
 }
-
+.slick-next:before {
+   
+    width: 0 !important;
+    height: 0 !important;
+    width: 15px !important;
+    height: 20px !important;
+    background-color: white !important;
+    clip-path: polygon(100% 50%, 0 0, 0 100%)!important;
+    transform: rotate(180deg)!important;
+    cursor: pointer!important;
+    opacity: 0.8!important;
+    font-family: 'Roboto', sans-serif !important;
+        line-height: 1 !important;
+        color: white !important;
+   
+}
+.slick-prev:before {
+   
+    width: 0 !important;
+    height: 0 !important;
+    width: 15px !important;
+    height: 20px !important;
+    background-color: white !important;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    transform: rotate(180deg)!important;
+    cursor: pointer!important;
+    opacity: 0.8!important;
+    font-family: 'Roboto', sans-serif !important;
+        line-height: 1 !important;
+        color: white !important;
+   
+}
 .slick-next {
     right: -25px !important;
 }
@@ -984,7 +1102,9 @@ a:hover {
     .nav-item:last-child .nav-link {
         border-bottom: none;
     }
-
+    .slick-prev:before, .slick-next:before {
+        font-size: 21px !important;
+    }
     .emergency-phone {
         margin-top: 10px;
         justify-content: center;
@@ -999,7 +1119,20 @@ a:hover {
         font-size: 13px;
         font-weight: bold;
     }
-
+    .phone-icon {
+        position: fixed;
+        bottom: 15px;
+        right: 6px;
+        font-size: 31px;
+        /* color: #25D366; */
+        animation: shake 1s infinite;
+        z-index: 1000;
+        cursor: pointer;
+        background: #C1272D;
+        padding: 13px;
+        color: white;
+        border-radius: 999px;
+    }
     .emergency-phone {
         color: white;
         font-size: 13px;
@@ -1009,7 +1142,22 @@ a:hover {
         right: 32px;
         top: 20px;
     }
-
+    .section-title{
+        padding: 13px 7px;
+    }
+    .fleet-image {
+        padding-bottom: 30px;
+      
+    }
+    .pricing-title {
+        padding: 10px 3px;
+        
+    }
+    .red {
+        font-size: 19px;
+  
+        max-width: 100%;
+    }
     .phone {
         display: none;
     }
@@ -1032,12 +1180,15 @@ a:hover {
     .alert-custom,
     .intro-text,
     .service-title,
-    .feature-text,
     .des1,
     .description,
     .title {
         font-size: 12px;
 
+    }
+    .feature-text{
+
+        font-size: 15px;
     }
 
     .contact-address {
