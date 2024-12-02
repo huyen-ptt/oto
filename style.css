@@ -39,12 +39,14 @@ body {
     padding: 10px 20px;
     text-align: center;
 }
-.menu-active{
+
+.menu-active {
     background-color: #C1272D;
     padding: 8px;
     border-radius: 8px;
     font-weight: bold !important;
 }
+
 /* Left shadow */
 .banner::before {
     content: "";
@@ -92,7 +94,7 @@ body {
 
 .nav-link {
     color: white !important;
-    margin: 0 20px ;
+    margin: 0 20px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -295,63 +297,67 @@ body {
     overflow: hidden;
     cursor: pointer;
     animation: pulse 1.5s infinite;
-  }
+}
 
-  @keyframes pulse {
+@keyframes pulse {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
-    50% {
-      transform: scale(1.02);
-      box-shadow: 0 0 10px rgba(193, 39, 45, 0.7);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  @keyframes pulse1 {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.02);
-      /* box-shadow: 0 0 10px rgba(193, 39, 45, 0.7); */
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 
-  .red::before {
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 10px rgba(193, 39, 45, 0.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse1 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+        /* box-shadow: 0 0 10px rgba(193, 39, 45, 0.7); */
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.red::before {
     content: '';
     position: absolute;
     top: -50%;
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(
-      45deg,
-      transparent,
-      rgba(255, 255, 255, 0.1),
-      transparent
-    );
+    background: linear-gradient(45deg,
+            transparent,
+            rgba(255, 255, 255, 0.1),
+            transparent);
     transform: rotate(45deg);
     animation: shine 2s infinite;
-  }
+}
 
-  @keyframes shine {
+@keyframes shine {
     0% {
-      left: -50%;
+        left: -50%;
     }
-    100% {
-      left: 150%;
-    }
-  }
 
-  .emergency-text {
+    100% {
+        left: 150%;
+    }
+}
+
+.emergency-text {
     position: relative;
     z-index: 1;
-  }
+}
 
 .services-section {
     position: relative;
@@ -468,7 +474,8 @@ body {
     /* clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); */
     height: 400px;
 }
-.eclip{
+
+.eclip {
     background: #1A1A1A;
     padding-bottom: 70px;
     margin-bottom: 30px;
@@ -476,25 +483,31 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 3%, 50% 100%, 0 3%);
 
 }
-.bao-uy-tin{
+
+.bao-uy-tin {
     background: #1A1A1A;
 
     clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
 }
+
 .feature-card.red-card {
     background: #C1272D;
 }
-.do1, .eclip1{
+
+.do1,
+.eclip1 {
     background: #C1272D !important;
 
 }
-.eclip1{
+
+.eclip1 {
     background: #C1272D !important;
     clip-path: polygon(0 0, 100% 0, 100% 3%, 50% 100%, 0 3%);
     padding-bottom: 70px;
     margin-bottom: 30px;
 
 }
+
 .phone-icon {
     position: fixed;
     bottom: 20px;
@@ -508,17 +521,38 @@ body {
     padding: 20px;
     color: white;
     border-radius: 999px;
-  }
+}
 
-  @keyframes shake {
-    0% { transform: rotate(0deg); }
-    10% { transform: rotate(-10deg); }
-    20% { transform: rotate(10deg); }
-    30% { transform: rotate(-10deg); }
-    40% { transform: rotate(10deg); }
-    50% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
-  }
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(-10deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .feature-icon {
     width: 60px;
     height: 60px;
@@ -533,7 +567,7 @@ body {
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
-position: relative;
+    position: relative;
     text-transform: uppercase;
     margin: 15px -27px;
 }
@@ -606,9 +640,11 @@ position: relative;
 .pricing-title:hover:after {
     width: 100%;
 }
-a:hover{
+
+a:hover {
     color: white;
 }
+
 .pricing-title1 {
     background: #C1272D;
     color: white;
@@ -621,10 +657,12 @@ a:hover{
     font-weight: bold;
     /* animation: pulse 1.5s infinite; */
 }
-.ani{
+
+.ani {
     animation: pulse1 1.5s infinite;
 
 }
+
 .mar {
     margin-bottom: 8px !important;
 }
@@ -839,11 +877,13 @@ a:hover{
     margin: 0 auto;
 
 }
+
 .active {
     color: red;
     font-weight: bold;
     text-decoration: underline;
 }
+
 .feature-title::before {
     content: "";
     width: 0;
@@ -898,38 +938,41 @@ a:hover{
     font-size: 30px !important;
 
 }
+
 .slick-next:before {
-   
+
     width: 0 !important;
     height: 0 !important;
     width: 15px !important;
     height: 20px !important;
     background-color: white !important;
-    clip-path: polygon(100% 50%, 0 0, 0 100%)!important;
-    transform: rotate(180deg)!important;
-    cursor: pointer!important;
-    opacity: 0.8!important;
+    clip-path: polygon(100% 50%, 0 0, 0 100%) !important;
+    transform: rotate(180deg) !important;
+    cursor: pointer !important;
+    opacity: 0.8 !important;
     font-family: 'Roboto', sans-serif !important;
-        line-height: 1 !important;
-        color: white !important;
-   
+    line-height: 1 !important;
+    color: white !important;
+
 }
+
 .slick-prev:before {
-   
+
     width: 0 !important;
     height: 0 !important;
     width: 15px !important;
     height: 20px !important;
     background-color: white !important;
     clip-path: polygon(0 50%, 100% 0, 100% 100%);
-    transform: rotate(180deg)!important;
-    cursor: pointer!important;
-    opacity: 0.8!important;
+    transform: rotate(180deg) !important;
+    cursor: pointer !important;
+    opacity: 0.8 !important;
     font-family: 'Roboto', sans-serif !important;
-        line-height: 1 !important;
-        color: white !important;
-   
+    line-height: 1 !important;
+    color: white !important;
+
 }
+
 .slick-next {
     right: -25px !important;
 }
@@ -1102,9 +1145,12 @@ a:hover {
     .nav-item:last-child .nav-link {
         border-bottom: none;
     }
-    .slick-prev:before, .slick-next:before {
+
+    .slick-prev:before,
+    .slick-next:before {
         font-size: 21px !important;
     }
+
     .emergency-phone {
         margin-top: 10px;
         justify-content: center;
@@ -1119,6 +1165,7 @@ a:hover {
         font-size: 13px;
         font-weight: bold;
     }
+
     .phone-icon {
         position: fixed;
         bottom: 15px;
@@ -1133,6 +1180,7 @@ a:hover {
         color: white;
         border-radius: 999px;
     }
+
     .emergency-phone {
         color: white;
         font-size: 13px;
@@ -1142,22 +1190,27 @@ a:hover {
         right: 32px;
         top: 20px;
     }
-    .section-title{
+
+    .section-title {
         padding: 13px 7px;
     }
+
     .fleet-image {
         padding-bottom: 30px;
-      
+
     }
+
     .pricing-title {
         padding: 10px 3px;
-        
+
     }
+
     .red {
         font-size: 19px;
-  
+
         max-width: 100%;
     }
+
     .phone {
         display: none;
     }
@@ -1171,7 +1224,8 @@ a:hover {
         font-size: 20px;
     }
 
-    .section-title, .pricing-title1 {
+    .section-title,
+    .pricing-title1 {
 
         font-size: 19px;
 
@@ -1186,14 +1240,15 @@ a:hover {
         font-size: 12px;
 
     }
-    .feature-text{
+
+    .feature-text {
 
         font-size: 15px;
     }
 
     .contact-address {
         font-size: 15px;
-      
+
     }
 
     .meo {
@@ -1241,6 +1296,11 @@ a:hover {
 
     }
 
+    .why-choose-title {
+        margin-top: 10px;
+
+    }
+
     .pricing-table th,
     .pricing-table td {
         padding: 8px 7px;
@@ -1259,19 +1319,22 @@ a:hover {
 
     .testimonials-section {
         clip-path: polygon(0 100%, 100% 100%, 100% 4%, 50% 0, 0 4%);
-        
+
         padding: 123px 0 0;
     }
 
     .why-choose-section {
         padding: 0px !important;
     }
+
     .slick-next {
         right: 3px !important;
     }
+
     .slick-prev {
         left: 3px !important;
     }
+
     .des {
         padding-bottom: 20px;
     }
