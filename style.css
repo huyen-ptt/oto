@@ -703,7 +703,7 @@ a:hover{
 }
 
 .process-circle p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
     margin: 0;
     padding-bottom: 10px;
@@ -755,8 +755,8 @@ a:hover{
 
 .testimonials-section {
     background: #1a1a1a;
-    clip-path: polygon(0 100%, 100% 100%, 100% 41%, 50% 0, 0 41%);
-    padding: 100px 0 0;
+    clip-path: polygon(0 100%, 100% 100%, 100% 16%, 50% 0, 0 16%);
+    padding: 115px 0 0;
     color: white;
 }
 
@@ -1258,8 +1258,9 @@ a:hover {
     }
 
     .testimonials-section {
-        clip-path: polygon(0 100%, 100% 100%, 100% 7%, 50% 0, 0 7%);
-
+        clip-path: polygon(0 100%, 100% 100%, 100% 4%, 50% 0, 0 4%);
+        
+        padding: 123px 0 0;
     }
 
     .why-choose-section {
